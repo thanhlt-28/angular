@@ -13,17 +13,17 @@ import { CategoryService } from 'src/app/services/category.service';
 export class DemoUploadComponent implements OnInit {
   downloadURL: Observable<string>;
   constructor(private storage: AngularFireStorage,
-    private cateService: CategoryService) {}
-   
+    private cateService: CategoryService) { }
+
 
   ngOnInit(): void {
   }
 
-  uploadFile(event){
+  uploadFile(event) {
     event.preventDefault();
-    
+
   }
-  upload2Laravel(event){
+  upload2Laravel(event) {
     let fd = new FormData();
     fd.append('image', event.target.files[0]);
     this.cateService.uploadImage(fd).subscribe(data => {
@@ -31,7 +31,7 @@ export class DemoUploadComponent implements OnInit {
     })
 
   }
-  onFileSelected(event){
+  onFileSelected(event) {
     var n = Date.now();
     const file = event.target.files[0];
     const filePath = `Uploads/${n}`;

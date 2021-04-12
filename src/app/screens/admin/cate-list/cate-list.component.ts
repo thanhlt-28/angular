@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Category } from 'src/app/models/category';
 import { MonsterService } from 'src/app/services/monster.service';
 import { CategoryService } from 'src/app/services/category.service';
@@ -31,7 +31,7 @@ export class CateListComponent implements OnInit {
       let ids = cate.monster.map(item => item.id);
       this.monsterService.removeMultiple(ids).subscribe(result => {
         this.cateService.remove(cate.id).subscribe(data => {
-          console.log(data);
+          return this.cates;
         })
       })
     })

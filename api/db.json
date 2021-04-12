@@ -23,6 +23,14 @@
     {
       "name": "Monster Utltra Absolutely Zero",
       "id": 7
+    },
+    {
+      "id": 8,
+      "name": "an toàn"
+    },
+    {
+      "id": 9,
+      "name": "bbbbbbbbbbbbbb"
     }
   ],
   "monster": [
@@ -31,6 +39,7 @@
       "title": "Monster Ultra Juice Pacific",
       "price": 150000,
       "categoryId": 1,
+      "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
       "authorId": 1,
       "image": "https://www.myamericanmarket.com/14865/monster-energy-juice-pacific-punch-energy-drink.jpg"
     },
@@ -39,6 +48,7 @@
       "title": "Monster Ultra Fiesta",
       "price": 190000,
       "categoryId": 1,
+      "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
       "authorId": 2,
       "image": "https://bodyfirst.ie/wp-content/uploads/2020/07/Monster-Ultra-Fiesta.jpg"
     },
@@ -47,6 +57,7 @@
       "title": "Monster Ultra Violet 550ml",
       "price": 52400,
       "categoryId": 1,
+      "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
       "authorId": 2,
       "image": "https://assets.sainsburys-groceries.co.uk/gol/7785382/1/640x640.jpg"
     },
@@ -55,6 +66,7 @@
       "title": "Monster Ultra Gold",
       "price": 99000,
       "categoryId": 1,
+      "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
       "authorId": 2,
       "image": "https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_225f1182-62d9-44c5-97dc-eaade5a4c22d.jpg"
     },
@@ -63,6 +75,7 @@
       "title": "Monster Ultra Paradise",
       "price": 74700,
       "categoryId": 1,
+      "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
       "authorId": 2,
       "image": "https://www.myamericanmarket.com/14875/monster-energy-ultra-paradise-energy-drink.jpg"
     },
@@ -71,6 +84,7 @@
       "title": "Monster Utltra Absolutely Zero",
       "price": 74700,
       "categoryId": 1,
+      "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
       "authorId": 1,
       "image": "https://cf.shopee.vn/file/f7311bc4c0058208ce613b68307776ce"
     }

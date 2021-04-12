@@ -10,7 +10,7 @@ export class BookDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private bookService: MonsterService
+    private monsterService: MonsterService
   ) { }
   bookId: string;
   book: any;
@@ -19,7 +19,7 @@ export class BookDetailComponent implements OnInit {
       this.bookId = params['bookId'];
     });
 
-    await this.bookService.findById(this.bookId).subscribe(data => {
+    await this.monsterService.findById(this.bookId).subscribe(data => {
       this.book = data;
     });
   }

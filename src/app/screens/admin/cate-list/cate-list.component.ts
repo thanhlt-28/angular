@@ -12,7 +12,7 @@ export class CateListComponent implements OnInit {
   cates: Category[] = [];
 
   constructor(private cateService: CategoryService,
-    private bookService: MonsterService
+    private monsterService: MonsterService
   ) { }
 
   ngOnInit(): void {
@@ -29,7 +29,7 @@ export class CateListComponent implements OnInit {
   remove(id: any) {
     this.cateService.findById(id).subscribe(cate => {
       let ids = cate.monster.map(item => item.id);
-      this.bookService.removeMultiple(ids).subscribe(result => {
+      this.monsterService.removeMultiple(ids).subscribe(result => {
         this.cateService.remove(cate.id).subscribe(data => {
           console.log(data);
         })

@@ -1,0 +1,14 @@
+<p>{{date | date: 'dd/MM/YYYY'}}</p>
+<p>{{money | currency: 'VND'}}</p>
+<p>{{gender | genderPipe}}</p>
+<img [src]="heroData.image" class="img-thumbnail">
+<p>
+    <strong [innerHTML]="heroData.name"></strong>
+</p>
+<ng-container *ngIf="heroData.skills != undefined"> 
+    <span *ngFor="let ski of heroData.skills" class="badge text-white bg-primary">{{ski.name}}</span> 
+</ng-container>
+<div class="text-center">
+    <button (click)="updateHero()" class="btn btn-info">Update</button> 
+    <button class="btn btn-danger" (click)="removeHero()">Remove</button>
+</div>

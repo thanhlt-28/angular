@@ -1,0 +1,30 @@
+<br>
+<div class="row">
+    <div class="col-3 offset-6">
+        <input type="text" class="form-control" 
+            [(ngModel)]="filterObject.keyword"
+            (keyup)="search()"
+            placeholder="Tìm kiếm...">
+    </div>
+    <div class="col-3">
+        <select class="form-control" 
+            (change)="search()"
+            [(ngModel)]="filterObject.orderBy">
+            <option *ngFor="let ord of orderData" 
+                    [value]="ord.id">{{ord.name}}</option>
+        </select>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-4" *ngFor="let b of books">
+        <img [src]="b.image" class="img-thumbnail">
+        <h4>
+            <a href="javascript:;" routerLink="chi-tiet/{{b.id}}">{{b.title | titlecase}}</a>
+        </h4>
+        <p>Giá: {{b.price | currency: 'VND'}}</p>
+        <p>Tác giả: 
+            <a href="javascript:;" routerLink="tac-gia/{{b.author.id}}">{{b.author.name}}</a>
+        </p>
+    </div>
+</div>

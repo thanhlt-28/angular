@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "web206-ass-firestore": {
+      "hosting": {
+        "PT15211-WEB": [
+          "web206-ass-firestore"
+        ]
+      }
+    }
+  }
+}

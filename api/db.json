@@ -1,0 +1,72 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "sách kinh tế 2"
+    },
+    {
+      "id": 3,
+      "name": "Văn Hóa – Thể thao"
+    },
+    {
+      "id": 4,
+      "name": "Truyện ma"
+    },
+    {
+      "name": "V-Buddhism",
+      "id": 5
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "CẨM NANG MUA BÁN ĐẤT",
+      "price": 150000,
+      "categoryId": 1,
+      "authorId": 1,
+      "image": "https://salt.tikicdn.com/cache/w444/ts/product/44/03/b1/f797420579b8e0f5c84a1278d23053ec.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Ai Rồi Cũng Qua, Để Không Hối Hận",
+      "price": 190000,
+      "categoryId": 1,
+      "authorId": 2,
+      "image": "https://salt.tikicdn.com/cache/w444/ts/product/53/22/f7/6ccbfe3c59426c350a55e5e6ea7d86a4.png"
+    },
+    {
+      "id": 4,
+      "title": "Đừng Chạy Theo Người Khác",
+      "price": 52400,
+      "categoryId": 1,
+      "authorId": 2,
+      "image": "https://salt.tikicdn.com/cache/w444/ts/product/27/6a/36/3baa4d13a402dfdb0c0abd191c4f97d7.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Sống Có Kế Hoạch",
+      "price": 99000,
+      "categoryId": 1,
+      "authorId": 2,
+      "image": "https://salt.tikicdn.com/cache/w444/ts/product/02/0a/93/03e9f498a8a23e7c0e39828cca8fc501.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Nghệ Thuật Tối Giản: Có Ít Đi, Sống Nhiều Hơn (Tái bản)",
+      "price": 74700,
+      "categoryId": 1,
+      "authorId": 2,
+      "image": "https://salt.tikicdn.com/cache/w444/ts/product/c5/51/4b/985bef9762bfeab4b5dadc56b6fdebe3.jpg"
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Đỗ Đăng Khoa"
+    },
+    {
+      "id": 2,
+      "name": "Lê Đỗ Quỳnh Hương"
+    }
+  ]
+}

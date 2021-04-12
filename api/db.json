@@ -2,65 +2,65 @@
   "categories": [
     {
       "id": 1,
-      "name": "sách kinh tế 2"
+      "name": "Monster Ultra Violet"
     },
     {
       "id": 3,
-      "name": "Văn Hóa – Thể thao"
+      "name": "Monster Ultra Fiesta"
     },
     {
       "id": 4,
-      "name": "Truyện ma"
+      "name": "Monster Ultra Juice Pacific"
     },
     {
-      "name": "V-Buddhism",
+      "name": "Monster Ultra Gold",
       "id": 5
     },
     {
       "id": 6,
-      "name": "hien "
+      "name": "Monster Ultra Paradise "
     }
   ],
-  "books": [
+  "monster": [
     {
       "id": 1,
-      "title": "CẨM NANG MUA BÁN ĐẤT",
+      "title": "Monster Ultra Juice Pacific",
       "price": 150000,
       "categoryId": 1,
       "authorId": 1,
-      "image": "https://salt.tikicdn.com/cache/w444/ts/product/44/03/b1/f797420579b8e0f5c84a1278d23053ec.jpg"
+      "image": "https://www.myamericanmarket.com/14865/monster-energy-juice-pacific-punch-energy-drink.jpg"
     },
     {
       "id": 3,
-      "title": "Ai Rồi Cũng Qua, Để Không Hối Hận",
+      "title": "Monster Ultra Fiesta",
       "price": 190000,
       "categoryId": 1,
       "authorId": 2,
-      "image": "https://salt.tikicdn.com/cache/w444/ts/product/53/22/f7/6ccbfe3c59426c350a55e5e6ea7d86a4.png"
+      "image": "https://bodyfirst.ie/wp-content/uploads/2020/07/Monster-Ultra-Fiesta.jpg"
     },
     {
       "id": 4,
-      "title": "Đừng Chạy Theo Người Khác",
+      "title": "Monster Ultra Violet 550ml",
       "price": 52400,
       "categoryId": 1,
       "authorId": 2,
-      "image": "https://salt.tikicdn.com/cache/w444/ts/product/27/6a/36/3baa4d13a402dfdb0c0abd191c4f97d7.jpg"
+      "image": "https://assets.sainsburys-groceries.co.uk/gol/7785382/1/640x640.jpg"
     },
     {
       "id": 5,
-      "title": "Sống Có Kế Hoạch",
+      "title": "Monster Ultra Gold",
       "price": 99000,
       "categoryId": 1,
       "authorId": 2,
-      "image": "https://salt.tikicdn.com/cache/w444/ts/product/02/0a/93/03e9f498a8a23e7c0e39828cca8fc501.jpg"
+      "image": "https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_225f1182-62d9-44c5-97dc-eaade5a4c22d.jpg"
     },
     {
       "id": 6,
-      "title": "Nghệ Thuật Tối Giản: Có Ít Đi, Sống Nhiều Hơn (Tái bản)",
+      "title": "Monster Ultra Paradise",
       "price": 74700,
       "categoryId": 1,
       "authorId": 2,
-      "image": "https://salt.tikicdn.com/cache/w444/ts/product/c5/51/4b/985bef9762bfeab4b5dadc56b6fdebe3.jpg"
+      "image": "https://www.myamericanmarket.com/14875/monster-energy-ultra-paradise-energy-drink.jpg"
     }
   ],
   "authors": [

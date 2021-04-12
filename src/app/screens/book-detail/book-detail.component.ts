@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { BookService } from 'src/app/services/book.service';
+import { MonsterService } from 'src/app/services/monster.service';
 @Component({
   selector: 'app-book-detail',
   templateUrl: './book-detail.component.html',
@@ -10,7 +10,7 @@ export class BookDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private bookService: BookService
+    private bookService: MonsterService
   ) { }
   bookId: string;
   book: any;

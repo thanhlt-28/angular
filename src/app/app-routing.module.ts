@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { ClientLayoutComponent } from './layouts/client-layout/client-layout.component';
+import { ProductsComponent } from './products/products.component';
 import { CateEditComponent } from './screens/admin/cate-edit/cate-edit.component';
 import { CateListComponent } from './screens/admin/cate-list/cate-list.component';
 import { CateNewComponent } from './screens/admin/cate-new/cate-new.component';
@@ -49,6 +50,10 @@ const routes: Routes = [
       {
         path: "upload-firestore",
         component: DemoUploadComponent
+      },
+      {
+        path: "san-pham",
+        component: ProductsComponent
       }
     ]
   },

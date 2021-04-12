@@ -17,6 +17,7 @@ import { DashboardComponent } from './screens/admin/dashboard/dashboard.componen
 import { CateListComponent } from './screens/admin/cate-list/cate-list.component';
 import { CateNewComponent } from './screens/admin/cate-new/cate-new.component';
 import { CateEditComponent } from './screens/admin/cate-edit/cate-edit.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { CateEditComponent } from './screens/admin/cate-edit/cate-edit.component
     CateListComponent,
     CateNewComponent,
     CateEditComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,

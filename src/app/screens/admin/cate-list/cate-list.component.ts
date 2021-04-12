@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from 'src/app/models/category';
-import { BookService } from 'src/app/services/book.service';
+import { MonsterService } from 'src/app/services/monster.service';
 import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
@@ -10,25 +10,25 @@ import { CategoryService } from 'src/app/services/category.service';
 })
 export class CateListComponent implements OnInit {
   cates: Category[] = [];
-  
+
   constructor(private cateService: CategoryService,
-              private bookService: BookService
-    ) { }
+    private bookService: MonsterService
+  ) { }
 
   ngOnInit(): void {
     this.getCateList();
-    
+
   }
 
-  getCateList(){
+  getCateList() {
     this.cateService.getAll().subscribe(data => {
       this.cates = data;
     })
   }
 
-  remove(id: any){
+  remove(id: any) {
     this.cateService.findById(id).subscribe(cate => {
-      let ids = cate.books.map(item => item.id);
+      let ids = cate.monster.map(item => item.id);
       this.bookService.removeMultiple(ids).subscribe(result => {
         this.cateService.remove(cate.id).subscribe(data => {
           console.log(data);

@@ -1,23 +1,38 @@
-<table class="table table-striped">
-    <thead>
-        <th>#</th>
-        <th>Tên danh mục</th>
-        <th>Số sách</th>
-        <th>
-            <a href="javascript:;" class="btn btn-success"
-                routerLink="/admin/danh-muc/new">Tạo mới</a>
-        </th>
-    </thead>
-    <tbody>
-        <tr *ngFor="let c of cates; index as i">
-            <td>{{i+1}}</td>
-            <td>{{c.name | titlecase}}</td>
-            <td>{{c.books.length}}</td>
-            <td>
-                <a href="javascript:;" class="btn btn-info"
-                routerLink="/admin/danh-muc/edit/{{c.id}}">Sửa</a>
-                <a href="javascript:;" (click)="remove(c.id)" class="btn btn-danger">Xóa</a>
-            </td>
-        </tr>
-    </tbody>
+<h4 class="text-primary">Danh sách danh mục</h4>
+
+<table class="table table-borderless table-hover">
+  <caption>
+    Adminstrator
+  </caption>
+  <thead>
+    <th>ID</th>
+    <th>Tên danh mục</th>
+    <th>Số sách</th>
+    <th>
+      <a
+        href="javascript:;"
+        class="btn btn-warning"
+        routerLink="/admin/danh-muc/new"
+        >Tạo mới</a
+      >
+    </th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of cates; index as i">
+      <td>{{ i + 1 }}</td>
+      <td>{{ c.name | titlecase }}</td>
+      <td>{{ c.books.length }}</td>
+      <td>
+        <a
+          href="javascript:;"
+          class="btn btn-info"
+          routerLink="/admin/danh-muc/edit/{{ c.id }}"
+          >Sửa
+        </a>
+        <a href="javascript:;" (click)="remove(c.id)" class="btn btn-danger">
+          Xóa</a
+        >
+      </td>
+    </tr>
+  </tbody>
 </table>

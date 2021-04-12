@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ORDER_DATA } from 'src/app/mock-data/ORDER_DATA';
-import { BookService } from 'src/app/services/book.service';
+import { MonsterService } from 'src/app/services/monster.service';
 
 @Component({
   selector: 'app-book-list',
@@ -9,10 +9,10 @@ import { BookService } from 'src/app/services/book.service';
 })
 export class BookListComponent implements OnInit {
 
-  constructor(private bookService: BookService) { }
-  books: any;
+  constructor(private monsterService: MonsterService) { }
+  monster: any;
   orderData: any[] = ORDER_DATA;
-  
+
   filterObject = {
     orderBy: "1",
     keyword: ""
@@ -21,9 +21,9 @@ export class BookListComponent implements OnInit {
   ngOnInit(): void {
     this.search();
   }
-  search(){
-    this.bookService.getAll(this.filterObject).subscribe(data => {
-      this.books = data;
+  search() {
+    this.monsterService.getAll(this.filterObject).subscribe(data => {
+      this.monster = data;
     })
   }
 

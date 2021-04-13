@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { ClientLayoutComponent } from './layouts/client-layout/client-layout.component';
-import { ProductsComponent } from './products/products.component';
 import { CateEditComponent } from './screens/admin/cate-edit/cate-edit.component';
 import { CateListComponent } from './screens/admin/cate-list/cate-list.component';
 import { CateNewComponent } from './screens/admin/cate-new/cate-new.component';
@@ -10,7 +9,13 @@ import { DashboardComponent } from './screens/admin/dashboard/dashboard.componen
 import { DemoUploadComponent } from './screens/admin/demo-upload/demo-upload.component';
 import { BookDetailComponent } from './screens/book-detail/book-detail.component';
 import { BookListComponent } from './screens/book-list/book-list.component';
+import { ProdListComponent } from './screens/products/prod-list/prod-list.component';
 import { HeroListComponent } from './screens/hero-list/hero-list.component';
+import { AuthListComponent } from './screens/auth/auth-list/auth-list.component';
+import { ProdNewComponent } from './screens/products/prod-new/prod-new.component';
+import { AuthNewComponent } from './screens/auth/auth-new/auth-new.component';
+import { AuthEditComponent } from './screens/auth/auth-edit/auth-edit.component';
+import { ProdEditComponent } from './screens/products/prod-edit/prod-edit.component';
 
 const routes: Routes = [
   {
@@ -53,8 +58,28 @@ const routes: Routes = [
       },
       {
         path: "san-pham",
-        component: ProductsComponent
-      }
+        component: ProdListComponent
+      },
+      {
+        path: "san-pham/new",
+        component: ProdNewComponent
+      },
+      {
+        path: "san-pham/edit",
+        component: ProdEditComponent
+      },
+      {
+        path: "quoc-gia",
+        component: AuthListComponent
+      },
+      {
+        path: "quoc-gia/new",
+        component: AuthNewComponent
+      },
+      {
+        path: "quoc-gia/edit",
+        component: AuthEditComponent
+      },
     ]
   },
   {

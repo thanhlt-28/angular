@@ -1,20 +1,21 @@
 <div class="container">
-    <p>hero list!</p>
-    <div class="row">
-        <div class="col-6">
-            <hero-form 
-                (submitForm)="saveFormSubmit($event)"
-                [formObject]="updateObject"></hero-form>            
-        </div>
+  <p>hero list!</p>
+  <div class="row">
+    <div class="col-6">
+      <hero-form
+        (submitForm)="saveFormSubmit($event)"
+        [formObject]="updateObject"
+      ></hero-form>
     </div>
-    <br>
-    <div class="row">
-        
-        <div class="col-3" *ngFor="let hero of heroes">
-            <hero-unit 
-                (updateEvent)="updateHero($event)"
-                (delete)="parentRemove($event)"
-                [heroData]="hero"></hero-unit>
-        </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-3" *ngFor="let hero of heroes">
+      <hero-unit
+        (updateEvent)="updateHero($event)"
+        (delete)="parentRemove($event)"
+        [heroData]="hero"
+      ></hero-unit>
     </div>
+  </div>
 </div>

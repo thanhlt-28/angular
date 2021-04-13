@@ -17,7 +17,12 @@ import { DashboardComponent } from './screens/admin/dashboard/dashboard.componen
 import { CateListComponent } from './screens/admin/cate-list/cate-list.component';
 import { CateNewComponent } from './screens/admin/cate-new/cate-new.component';
 import { CateEditComponent } from './screens/admin/cate-edit/cate-edit.component';
-import { ProductsComponent } from './products/products.component';
+import { ProdListComponent } from './screens/products/prod-list/prod-list.component';
+import { AuthListComponent } from './screens/auth/auth-list/auth-list.component';
+import { ProdNewComponent } from './screens/products/prod-new/prod-new.component';
+import { ProdEditComponent } from './screens/products/prod-edit/prod-edit.component';
+import { AuthNewComponent } from './screens/auth/auth-new/auth-new.component';
+import { AuthEditComponent } from './screens/auth/auth-edit/auth-edit.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +39,14 @@ import { ProductsComponent } from './products/products.component';
     CateListComponent,
     CateNewComponent,
     CateEditComponent,
-    ProductsComponent,
+    ProdListComponent,
+    AuthListComponent,
+    ProdNewComponent,
+    ProdEditComponent,
+    AuthNewComponent,
+    AuthEditComponent,
+    ProdListComponent,
+
   ],
   imports: [
     BrowserModule,

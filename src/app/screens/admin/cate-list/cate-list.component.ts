@@ -1,7 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Category } from 'src/app/models/category';
-import { MonsterService } from 'src/app/services/monster.service';
 import { CategoryService } from 'src/app/services/category.service';
+import { Router } from '@angular/router';
+import { BookService } from 'src/app/services/book.service';
 
 @Component({
   selector: 'app-cate-list',
@@ -12,7 +13,8 @@ export class CateListComponent implements OnInit {
   cates: Category[] = [];
 
   constructor(private cateService: CategoryService,
-    private monsterService: MonsterService
+    private bookService: BookService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -27,14 +29,29 @@ export class CateListComponent implements OnInit {
   }
 
   remove(id: any) {
-    this.cateService.findById(id).subscribe(cate => {
-      let ids = cate.monster.map(item => item.id);
-      this.monsterService.removeMultiple(ids).subscribe(result => {
-        this.cateService.remove(cate.id).subscribe(data => {
-          return this.cates;
-        })
-      })
-    })
+    // console.log(id);
+    this.cateService.findById(id).subscribe((cate) => {
+      let cof = confirm("Bạn có chắc chắn xóa không?");
+      if (cof) {
+
+        // let ids = cate.books.map((item) => item.id);
+        // if (id.length != 0) {
+        //   this.bookService.removeMultiple(id).subscribe((result) => {
+        //     this.cateService.remove(cate.id).subscribe((data) => {
+        //       // console.log(data);
+        //       this.getCateList();
+        //       this.router.navigate(['/admin/danh-muc'])
+        //     });
+        //   });
+        // } else {
+        this.cateService.remove(id).subscribe((data) => {
+          // console.log(data);
+          this.getCateList();
+          this.router.navigate(['/admin/danh-muc'])
+        });
+        // }
+      }
+    });
   }
 
 }

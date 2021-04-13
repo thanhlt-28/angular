@@ -29,16 +29,16 @@
       "name": "an toàn"
     },
     {
-      "id": 9,
-      "name": "bbbbbbbbbbbbbb"
+      "name": "323233",
+      "id": 9
     }
   ],
-  "monster": [
+  "books": [
     {
       "id": 1,
       "title": "Monster Ultra Juice Pacific",
       "price": 150000,
-      "categoryId": 1,
+      "categoryId": 6,
       "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
       "authorId": 1,
       "image": "https://www.myamericanmarket.com/14865/monster-energy-juice-pacific-punch-energy-drink.jpg"
@@ -47,7 +47,7 @@
       "id": 3,
       "title": "Monster Ultra Fiesta",
       "price": 190000,
-      "categoryId": 1,
+      "categoryId": 3,
       "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
       "authorId": 2,
       "image": "https://bodyfirst.ie/wp-content/uploads/2020/07/Monster-Ultra-Fiesta.jpg"
@@ -56,16 +56,16 @@
       "id": 4,
       "title": "Monster Ultra Violet 550ml",
       "price": 52400,
-      "categoryId": 1,
+      "categoryId": 7,
       "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
-      "authorId": 2,
+      "authorId": 4,
       "image": "https://assets.sainsburys-groceries.co.uk/gol/7785382/1/640x640.jpg"
     },
     {
       "id": 5,
       "title": "Monster Ultra Gold",
       "price": 99000,
-      "categoryId": 1,
+      "categoryId": 5,
       "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
       "authorId": 2,
       "image": "https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_225f1182-62d9-44c5-97dc-eaade5a4c22d.jpg"
@@ -83,20 +83,32 @@
       "id": 6,
       "title": "Monster Utltra Absolutely Zero",
       "price": 74700,
-      "categoryId": 1,
+      "categoryId": 3,
       "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
-      "authorId": 1,
+      "authorId": 3,
       "image": "https://cf.shopee.vn/file/f7311bc4c0058208ce613b68307776ce"
     }
   ],
   "authors": [
     {
       "id": 1,
-      "name": "Đỗ Đăng Khoa"
+      "name": "American"
     },
     {
       "id": 2,
-      "name": "Lê Đỗ Quỳnh Hương"
+      "name": "Việt Nam"
+    },
+    {
+      "id": 3,
+      "name": "Germany"
+    },
+    {
+      "id": 4,
+      "name": "Korea"
+    },
+    {
+      "id": 5,
+      "name": "Japan"
     }
   ]
 }

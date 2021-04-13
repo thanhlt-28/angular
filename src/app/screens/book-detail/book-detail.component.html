@@ -1,16 +1,53 @@
 <h2>Chi tiết sản phẩm</h2>
-<br />
-<div *ngIf="book == undefined">
-  <div class="spinner-border text-warning" role="status"></div>
-</div>
-<div class="container" *ngIf="book != undefined">
-  <h3 class="title">{{ book.title }}</h3>
-  <div class="row">
-    <div class="col-4">
-      <img [src]="book.image" class="img-thumbnail" />
-      <p class="text-infor">
-        {{ book.details }}
-      </p>
+<div
+  class="w3-grey w3-animate-zoom"
+  style="padding: 20px 50px; background-size: cover"
+>
+  <div class="w3-section w3-row-padding" *ngIf="book != undefined">
+    <div class="w3-twothird">
+      <div class="w3-card-4">
+        <div class="w3-display-container">
+          <!-----Loading-------->
+          <div *ngIf="book == undefined">
+            <div class="spinner-border text-warning" role="status"></div>
+          </div>
+          <!-----img-------->
+          <img [src]="book.image" alt="Car" style="width: 100%" />
+          <div
+            class="w3-display-bottomleft w3-container w3-xlarge w3-text-black"
+          ></div>
+        </div>
+        <div class="w3-container w3-light-grey">
+          <h3 class="title">{{ book.title }}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-center">
+      <div class="w3-card-4">
+        <div class="w3-container">
+          <p class="w3-jumbo">✉</p>
+          <h3 class="w3-large">Giá: {{ book.price | currency: "VND" }}</h3>
+        </div>
+      </div>
+      <div class="w3-card-4 w3-section">
+        <div class="w3-container w3-white">
+          <a href="" class="w3-xxlarge">MUA NGAY</a>
+        </div>
+        <div class="w3-container">
+          <a href="" class="w3-large">THÊM VÀO GIỎ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-section w3-container">
+    <div class="w3-card-4">
+      <div class="w3-container w3-white">
+        <p>
+          {{ book.details }}
+        </p>
+        <p>Today</p>
+      </div>
     </div>
   </div>
 </div>

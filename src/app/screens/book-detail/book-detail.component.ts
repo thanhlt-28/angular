@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { MonsterService } from 'src/app/services/monster.service';
+import { BookService } from 'src/app/services/book.service';
 @Component({
   selector: 'app-book-detail',
   templateUrl: './book-detail.component.html',
@@ -10,7 +10,7 @@ export class BookDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private monsterService: MonsterService
+    private bookService: BookService
   ) { }
   bookId: string;
   book: any;
@@ -19,7 +19,7 @@ export class BookDetailComponent implements OnInit {
       this.bookId = params['bookId'];
     });
 
-    await this.monsterService.findById(this.bookId).subscribe(data => {
+    await this.bookService.findById(this.bookId).subscribe(data => {
       this.book = data;
     });
   }

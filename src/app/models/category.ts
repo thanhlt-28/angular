@@ -1,10 +1,10 @@
 export class Category {
     id: Number;
     name: string;
-    monster?: any[];
-    constructor(id: Number, name: string, monster: any[] = []) {
+    books?: any[];
+    constructor(id: Number, name: string, books: any[] = []) {
         this.id = id;
         this.name = name;
-        this.monster = monster;
+        this.books = books;
     }
 }

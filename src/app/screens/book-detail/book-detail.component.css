@@ -6,3 +6,23 @@
 .title {
   font-weight: bold;
 }
+.w3-large {
+  font: optional;
+  font-size: 20px;
+  font-weight: bold;
+  color: yellow;
+  text-decoration: none;
+}
+.w3-jumbo {
+  color: cornsilk;
+}
+.w3-xxlarge {
+  color: orangered;
+  text-decoration: orange;
+}
+.w3-xxlarge:hover {
+  color: royalblue;
+}
+.w3-grey {
+  background-color: pink;
+}

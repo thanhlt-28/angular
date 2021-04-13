@@ -11,3 +11,11 @@ h6,
 .w3-wide {
   font-family: "Montserrat", sans-serif;
 }
+.w3-tile-name {
+  text-decoration: none;
+  /* text-align: center; */
+}
+.center {
+  text-align: center;
+  margin-left: 75px;
+}

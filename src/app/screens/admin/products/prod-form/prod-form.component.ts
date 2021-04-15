@@ -1,30 +1,32 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Category } from 'src/app/models/category';
-import { CategoryService } from 'src/app/services/category.service';
-import { BookService } from 'src/app/services/book.service';
-import { Router, ActivatedRoute } from '@angular/router';
-import { map, finalize } from "rxjs/operators";
 import { AngularFireStorage } from '@angular/fire/storage';
-import { Observable, throwError } from 'rxjs';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { map, finalize } from "rxjs/operators";
+import { Author } from 'src/app/models/author';
+import { Category } from 'src/app/models/category';
+import { AuthService } from 'src/app/services/auth.service';
+import { BookService } from "src/app/services/book.service";
+import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
-  selector: 'app-prod-new',
-  templateUrl: './prod-new.component.html',
-  styleUrls: ['./prod-new.component.css']
+  selector: 'app-prod-form',
+  templateUrl: './prod-form.component.html',
+  styleUrls: ['./prod-form.component.css']
 })
-export class ProdNewComponent implements OnInit {
+export class ProdFormComponent implements OnInit {
 
   sub = "Add Form";
   downloadURL: Observable<string>;
-  imageUrl: String = ""
+  imageUrl: String = "https://banner2.cleanpng.com/20180805/cil/kisspng-porsche-cayenne-car-porsche-914-porsche-911-servizio-di-noleggio-porsche-in-europa-5b67243f55ffe1.7218574615334861433523.jpg"
   cates: Array<Category> = [];
+  author: Array<Author> = [];
 
 
-  prodNew = new FormGroup({
+  prodForm = new FormGroup({
     id: new FormControl(null),
     categoryId: new FormControl(null),
-    // category: new FormControl(''),
     title: new FormControl('', [
       Validators.required,
       Validators.minLength(4),
@@ -39,20 +41,23 @@ export class ProdNewComponent implements OnInit {
     price: new FormControl(null, [
       Validators.required,
     ]),
+    authorId: new FormControl(null),
     created_at: new FormControl(''),
     updated_at: new FormControl(''),
   });
 
-  get title() { return this.prodNew.get('title'); }
-  get image() { return this.prodNew.get('image'); }
-  get desc() { return this.prodNew.get('desc'); }
-  get details() { return this.prodNew.get('details'); }
-  get categoryId() { return this.prodNew.get('categoryId'); }
-  get price() { return this.prodNew.get('price'); }
+  get title() { return this.prodForm.get('title'); }
+  get image() { return this.prodForm.get('image'); }
+  get desc() { return this.prodForm.get('desc'); }
+  get details() { return this.prodForm.get('details'); }
+  get categoryId() { return this.prodForm.get('categoryId'); }
+  get authorId() { return this.prodForm.get('authorId'); }
+  get price() { return this.prodForm.get('price'); }
 
   constructor(
     private bookService: BookService,
     private categoryService: CategoryService,
+    private authService: AuthService,
     private route: Router,
     private activeRoute: ActivatedRoute,
     private storage: AngularFireStorage
@@ -63,15 +68,15 @@ export class ProdNewComponent implements OnInit {
     this.categoryService.getAll().subscribe(data => {
       this.cates = data;
 
-      // this.getCates();
+      this.getCates();
       this.activeRoute.paramMap.subscribe(params => {
         let id = params.get('id');
         if (id) {
           this.sub = "Edit Form";
           this.bookService.findById(id).subscribe(data => {
-            this.prodNew.setValue(data);
+            this.prodForm.setValue(data);
             this.getCates();
-            this.imageUrl = this.prodNew.value.image;
+            this.imageUrl = this.prodForm.value.image;
           });
         }
       })
@@ -105,18 +110,22 @@ export class ProdNewComponent implements OnInit {
     let num: [1, 100];
     this.categoryService.getAll().subscribe(data => {
       this.cates = data;
-    })
+    }),
+      this.authService.getAuthor().subscribe(
+        (data) => {
+          this.author = data;
+        })
   }
 
   saveProd() {
-    if (this.prodNew.valid) {
-      this.prodNew.value.image = this.imageUrl;
-      if (this.prodNew.value.id != null) {
-        this.bookService.editProd(this.prodNew.value).subscribe(data => {
+    if (this.prodForm.valid) {
+      this.prodForm.value.image = this.imageUrl;
+      if (this.prodForm.value.id != null) {
+        this.bookService.editProd(this.prodForm.value).subscribe(data => {
           this.route.navigate(['/admin/san-pham']);
         });
       } else {
-        this.bookService.addProd(this.prodNew.value).subscribe(data => {
+        this.bookService.addProd(this.prodForm.value).subscribe(data => {
           this.route.navigate(['/admin/san-pham']);
         })
       }

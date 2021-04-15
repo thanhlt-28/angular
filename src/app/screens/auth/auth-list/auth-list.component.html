@@ -19,19 +19,19 @@
     </th>
   </thead>
   <tbody>
-    <tr *ngFor="let c of author; index as i">
+    <tr *ngFor="let a of author; index as i">
       <td>{{ i + 1 }}</td>
-      <td>{{ c.name | titlecase }}</td>
-      <td>{{ c.books.length }}</td>
-      <td>00</td>
+      <td>{{ a.name | titlecase }}</td>
+      <td>{{ a.books.length }}</td>
+      <td></td>
       <td>
         <a
           href="javascript:;"
           class="btn btn-info"
-          routerLink="/admin/quoc-gia/edit/{{ c.id }}"
+          routerLink="/admin/quoc-gia/edit/{{ a.id }}"
           >Sửa
         </a>
-        <a href="javascript:;" (click)="remove(c.id)" class="btn btn-danger">
+        <a href="javascript:;" (click)="remove(a.id)" class="btn btn-danger">
           Xóa</a
         >
       </td>

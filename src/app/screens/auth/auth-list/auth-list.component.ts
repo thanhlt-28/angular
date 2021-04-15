@@ -43,4 +43,3 @@ export class AuthListComponent implements OnInit {
     });
   }
 }
-

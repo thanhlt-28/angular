@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Author } from '../models/author';
 import { Category } from '../models/category';
 
 @Injectable({
@@ -13,7 +14,9 @@ export class AuthService {
   getAll(): Observable<Category[]> {
     return this.http.get<Category[]>(`${this.API_URL}?_embed=books`);
   }
-
+  getAuthor(): Observable<Author[]> {
+    return this.http.get<Author[]>(`${this.API_URL}?_embed=books`);
+  }
   findById(id: any): Observable<Category> {
     let requestUrl = `${this.API_URL}/${id}?_embed=books`;
     return this.http.get<Category>(requestUrl);

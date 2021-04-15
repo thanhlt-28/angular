@@ -9,6 +9,7 @@ import { Product } from '../models/product';
 
 export class BookService {
     private bookApi: string = "http://localhost:3000/books";
+    store: any;
 
     constructor(private http: HttpClient) { }
 
@@ -58,5 +59,17 @@ export class BookService {
         return this.http.delete<any>(requestUrl);
 
         // return forkJoin(requestUrls);
+    }
+    update(object: Product): Observable<Product> {
+        object.categoryId = parseInt(object.categoryId.toString());
+        object.authorId = parseInt(object.authorId.toString());
+        let requestUrl = `${this.bookApi}/${object.id}`;
+        return this.http.put<Product>(requestUrl, object);
+    }
+    storage(object: Product): Observable<Product> {
+
+        object.categoryId = parseInt(object.categoryId.toString());
+        object.authorId = parseInt(object.authorId.toString());
+        return this.http.post<Product>(this.bookApi, object);
     }
 }

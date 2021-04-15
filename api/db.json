@@ -49,6 +49,82 @@
       "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
       "authorId": 2,
       "image": "https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_225f1182-62d9-44c5-97dc-eaade5a4c22d.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Monster Ultra Gold",
+      "price": 69000,
+      "desc": "Nước uống năng lượng",
+      "categoryId": 5,
+      "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
+      "authorId": 2,
+      "image": "https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_225f1182-62d9-44c5-97dc-eaade5a4c22d.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Monster Ultra Gold",
+      "price": 89000,
+      "desc": "Nước uống năng lượng",
+      "categoryId": 5,
+      "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
+      "authorId": 2,
+      "image": "https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_225f1182-62d9-44c5-97dc-eaade5a4c22d.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Monster Ultra Gold",
+      "price": 90000,
+      "desc": "Nước uống năng lượng",
+      "categoryId": 5,
+      "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
+      "authorId": 2,
+      "image": "https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_225f1182-62d9-44c5-97dc-eaade5a4c22d.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Monster Ultra Gold",
+      "price": 199000,
+      "desc": "Nước uống năng lượng",
+      "categoryId": 5,
+      "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
+      "authorId": 2,
+      "image": "https://d2d8wwwkmhfcva.cloudfront.net/800x/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_225f1182-62d9-44c5-97dc-eaade5a4c22d.jpg"
+    },
+    {
+      "id": 6,
+      "categoryId": "danh-muc/5",
+      "title": "Laptop 1232112",
+      "image": "https://banner2.cleanpng.com/20180805/cil/kisspng-porsche-cayenne-car-porsche-914-porsche-911-servizio-di-noleggio-porsche-in-europa-5b67243f55ffe1.7218574615334861433523.jpg",
+      "desc": "2344423",
+      "details": "243433",
+      "price": 23423434,
+      "authorId": "2",
+      "created_at": "",
+      "updated_at": ""
+    },
+    {
+      "id": 7,
+      "categoryId": "danh-muc/4",
+      "title": "Bia hơi33332",
+      "image": "https://banner2.cleanpng.com/20180805/cil/kisspng-porsche-cayenne-car-porsche-914-porsche-911-servizio-di-noleggio-porsche-in-europa-5b67243f55ffe1.7218574615334861433523.jpg",
+      "desc": "33234324234",
+      "details": "234234234243rewfef",
+      "price": 2343233,
+      "authorId": "4",
+      "created_at": "",
+      "updated_at": ""
+    },
+    {
+      "id": 8,
+      "categoryId": "danh-muc/4",
+      "title": "423234324",
+      "image": "https://banner2.cleanpng.com/20180805/cil/kisspng-porsche-cayenne-car-porsche-914-porsche-911-servizio-di-noleggio-porsche-in-europa-5b67243f55ffe1.7218574615334861433523.jpg",
+      "desc": "32434324",
+      "details": "2343243",
+      "price": 23423423423,
+      "authorId": "2",
+      "created_at": "",
+      "updated_at": ""
     }
   ],
   "authors": [

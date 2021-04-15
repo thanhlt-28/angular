@@ -17,15 +17,15 @@ import { DashboardComponent } from './screens/admin/dashboard/dashboard.componen
 import { CateListComponent } from './screens/admin/cate-list/cate-list.component';
 import { CateNewComponent } from './screens/admin/cate-new/cate-new.component';
 import { CateEditComponent } from './screens/admin/cate-edit/cate-edit.component';
-import { ProdListComponent } from './screens/products/prod-list/prod-list.component';
 import { AuthListComponent } from './screens/auth/auth-list/auth-list.component';
-import { ProdNewComponent } from './screens/products/prod-new/prod-new.component';
-import { ProdEditComponent } from './screens/products/prod-edit/prod-edit.component';
 import { AuthNewComponent } from './screens/auth/auth-new/auth-new.component';
 import { AuthEditComponent } from './screens/auth/auth-edit/auth-edit.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
+import { ProdFormComponent } from './screens/admin/products/prod-form/prod-form.component';
+import { ProdListComponent } from './screens/admin/products/prod-list/prod-list.component';
+import { ProdEditComponent } from './screens/admin/products/prod-edit/prod-edit.component';
 
 @NgModule({
   declarations: [
@@ -42,13 +42,12 @@ import { environment } from 'src/environments/environment';
     CateListComponent,
     CateNewComponent,
     CateEditComponent,
-    ProdListComponent,
     AuthListComponent,
-    ProdNewComponent,
-    ProdEditComponent,
     AuthNewComponent,
     AuthEditComponent,
+    ProdFormComponent,
     ProdListComponent,
+    ProdEditComponent
 
   ],
   imports: [

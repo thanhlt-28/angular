@@ -9,13 +9,13 @@ import { DashboardComponent } from './screens/admin/dashboard/dashboard.componen
 import { DemoUploadComponent } from './screens/admin/demo-upload/demo-upload.component';
 import { BookDetailComponent } from './screens/book-detail/book-detail.component';
 import { BookListComponent } from './screens/book-list/book-list.component';
-import { ProdListComponent } from './screens/products/prod-list/prod-list.component';
 import { HeroListComponent } from './screens/hero-list/hero-list.component';
 import { AuthListComponent } from './screens/auth/auth-list/auth-list.component';
-import { ProdNewComponent } from './screens/products/prod-new/prod-new.component';
 import { AuthNewComponent } from './screens/auth/auth-new/auth-new.component';
 import { AuthEditComponent } from './screens/auth/auth-edit/auth-edit.component';
-import { ProdEditComponent } from './screens/products/prod-edit/prod-edit.component';
+import { ProdFormComponent } from './screens/admin/products/prod-form/prod-form.component';
+import { ProdListComponent } from './screens/admin/products/prod-list/prod-list.component';
+import { ProdEditComponent } from './screens/admin/products/prod-edit/prod-edit.component';
 
 const routes: Routes = [
   {
@@ -62,10 +62,10 @@ const routes: Routes = [
       },
       {
         path: "san-pham/new",
-        component: ProdNewComponent
+        component: ProdFormComponent
       },
       {
-        path: "san-pham/edit",
+        path: "san-pham/edit/:id",
         component: ProdEditComponent
       },
       {

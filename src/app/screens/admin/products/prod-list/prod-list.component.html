@@ -28,12 +28,9 @@
       <td>{{ p.desc }}</td>
       <td>{{ p.name }}</td>
       <td>
-        <a
-          class="btn btn-info"
-          href="javascript:;"
-          routerLink="/admin/san-pham/edit/{{ p.id }} "
-          >Sửa
-        </a>
+        <a class="btn btn-info" [routerLink]="['/admin/san-pham/edit', p.id]"
+          >Sửa</a
+        >
         <a href="javascript:;" (click)="remove(p.id)" class="btn btn-danger"
           >Xóa
         </a>

@@ -1,7 +1,7 @@
 <div class="main-card mb-3 card">
   <div class="card-body">
     <h5 class="card-title">{{ title | titlecase }}</h5>
-    <form [formGroup]="prodNew" (ngSubmit)="saveProd()">
+    <form [formGroup]="prodForm" (ngSubmit)="saveProd()">
       <div class="position-relative row form-group">
         <label for="title" class="col-sm-2 col-form-label">Tên sản phẩm</label>
         <div class="col-sm-10">
@@ -29,15 +29,30 @@
         </div>
       </div>
       <br />
-
+      <div class="position-relative row form-group">
+        <label for="exampleText" class="col-sm-2 col-form-label"
+          >Quốc gia</label
+        >
+        <div class="col-sm-10">
+          <select class="form-control" formControlName="authorId">
+            <ng-container *ngFor="let a of author">
+              <option value="{{ a.id }}">
+                {{ a.name | titlecase }}
+              </option>
+            </ng-container>
+          </select>
+        </div>
+      </div>
+      <br />
       <div class="position-relative row form-group">
         <label class="col-sm-2 col-form-label">Ảnh</label>
         <div class="col-sm-10">
           <img
             [src]="imageUrl"
             width="100px"
-            class="img-thumbnail"
-            (click)="fileUploader.click()"
+            alt=""
+            formControlName="imageUrl"
+            (change)="fileUploader($event)"
           />
           <input #fileUploader type="file" class="form-control" />
         </div>
@@ -77,7 +92,7 @@
 
       <div class="position-relative row form-check">
         <div class="col-sm-10 offset-sm-2">
-          <button class="btn btn-success" [disabled]="!prodNew.valid">
+          <button class="btn btn-success" [disabled]="!prodForm.valid">
             Save
           </button>
         </div>
@@ -85,6 +100,7 @@
     </form>
   </div>
   <pre>
-    {{ prodNew.value | json }}
-  </pre>
+      {{ prodForm.value | json }}
+    </pre
+  >
 </div>

@@ -45,6 +45,14 @@ export class BookService {
         return this.http.get<any>(requestUrl);
     }
 
+    addProd(obj: Product): Observable<any> {
+        let url = this.bookApi;
+        return this.http.post<any>(url, obj);
+    }
+    editProd(obj: Product): Observable<any> {
+        let url = `${this.bookApi}/${obj.id}`;
+        return this.http.put<any>(url, obj);
+    }
     remove(id: any): Observable<any> {
         let requestUrl = `${this.bookApi}/${id}`;
         return this.http.delete<any>(requestUrl);

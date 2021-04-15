@@ -13,7 +13,7 @@
       <th scope="col">Mô tả</th>
       <th scope="col">Quốc gia</th>
       <th scope="col">
-        <a class="btn btn-warning" href="" [routerLink]="">Thêm mới</a>
+        <a class="btn btn-warning" routerLink="/admin/san-pham/new">Thêm mới</a>
       </th>
     </tr>
   </thead>
@@ -28,7 +28,12 @@
       <td>{{ p.desc }}</td>
       <td>{{ p.name }}</td>
       <td>
-        <a class="btn btn-info" href="">Sửa </a>
+        <a
+          class="btn btn-info"
+          href="javascript:;"
+          routerLink="/admin/san-pham/edit/{{ p.id }} "
+          >Sửa
+        </a>
         <a href="javascript:;" (click)="remove(p.id)" class="btn btn-danger"
           >Xóa
         </a>

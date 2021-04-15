@@ -30,7 +30,6 @@ export class ProdEditComponent implements OnInit {
   prodEdit = new FormGroup({
     id: new FormControl(null),
     categoryId: new FormControl(null),
-    // category: new FormControl(''),
     title: new FormControl('', [
       Validators.required,
       Validators.minLength(4),

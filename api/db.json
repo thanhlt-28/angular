@@ -102,15 +102,13 @@
     },
     {
       "id": 7,
-      "categoryId": "danh-muc/4",
-      "title": "Bia hơi33332",
+      "title": "Bia hơi 333",
       "image": "https://banner2.cleanpng.com/20180805/cil/kisspng-porsche-cayenne-car-porsche-914-porsche-911-servizio-di-noleggio-porsche-in-europa-5b67243f55ffe1.7218574615334861433523.jpg",
       "desc": "33234324234",
       "details": "234234234243rewfef",
-      "price": 2343233,
-      "authorId": "4",
-      "created_at": "",
-      "updated_at": ""
+      "price": 122222,
+      "categoryId": null,
+      "authorId": 4
     },
     {
       "id": 8,

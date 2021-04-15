@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, forkJoin } from 'rxjs';
+import { Product } from '../models/product';
 
 @Injectable({
     providedIn: 'root'
@@ -11,6 +12,9 @@ export class BookService {
 
     constructor(private http: HttpClient) { }
 
+    getAllProd(): Observable<Product[]> {
+        return this.http.get<Product[]>(`${this.bookApi}?_embed=books`);
+    }
     getAll(filter: any): Observable<any> {
         let requestUrl = this.bookApi + "?_expand=category&_expand=author";
         switch (filter.orderBy) {
@@ -41,11 +45,10 @@ export class BookService {
         return this.http.get<any>(requestUrl);
     }
 
-    removeMultiple(idList: any[]): Observable<any> {
-        let requestUrls = idList.map(
-            id => this.http.delete<any>(`${this.bookApi}/${id}`)
-        );
+    remove(id: any): Observable<any> {
+        let requestUrl = `${this.bookApi}/${id}`;
+        return this.http.delete<any>(requestUrl);
 
-        return forkJoin(requestUrls);
+        // return forkJoin(requestUrls);
     }
 }

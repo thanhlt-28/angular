@@ -1,11 +1,8 @@
 
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Product } from 'src/app/models/product';
-import { Category } from 'src/app/models/category';
 import { BookService } from 'src/app/services/book.service';
 import { Router } from '@angular/router';
 import { ORDER_DATA } from 'src/app/mock-data/ORDER_DATA';
-
 @Component({
   selector: 'app-prod-list',
   templateUrl: './prod-list.component.html',
@@ -13,9 +10,9 @@ import { ORDER_DATA } from 'src/app/mock-data/ORDER_DATA';
 })
 export class ProdListComponent implements OnInit {
 
-  prod: Array<any> = [];
-  totalPage = null;
-  pages: Array<Number> = [];
+  prod: any;
+  // totalPage = null;
+  // pages: Array<Number> = [];
 
   orderData: any[] = ORDER_DATA;
 
@@ -26,32 +23,31 @@ export class ProdListComponent implements OnInit {
     currentPage: 1
   }
   constructor(
-    private route: Router,
+    private router: Router,
     private bookService: BookService,
 
   ) { }
 
   ngOnInit(): void {
-    this.getAllProducts();
+    this.getAllProd();
   }
 
-  getAllProducts() {
-    this.bookService.getAll(this.filterObject).subscribe(res => {
-
-      this.prod = res.data;
-      this.totalPage = res.last_page;
-      if (this.pages.length == 0) {
-        for (let i = 1; i <= this.totalPage; i++) this.pages.push(i)
-      }
+  getAllProd() {
+    this.bookService.getAllProd().subscribe(data => {
+      this.prod = data;
     })
   }
-  remove(id) {
-    let conf = confirm("Bạn chắc chắn xóa");
-    if (conf) {
-      this.bookService.removeMultiple(id).subscribe(data => {
-        this.getAllProducts();
-        this.route.navigate(['/admin/product-list']);
-      })
-    }
+  remove(id: any) {
+    // console.log(id);
+    this.bookService.findById(id).subscribe((cate) => {
+      let cof = confirm("Bạn có chắc chắn xóa không?");
+      if (cof) {
+        this.bookService.remove(id).subscribe((data) => {
+          // console.log(data);
+          this.getAllProd();
+          this.router.navigate(['/admin/san-pham'])
+        });
+      }
+    });
   }
 }

@@ -23,6 +23,9 @@ import { ProdNewComponent } from './screens/products/prod-new/prod-new.component
 import { ProdEditComponent } from './screens/products/prod-edit/prod-edit.component';
 import { AuthNewComponent } from './screens/auth/auth-new/auth-new.component';
 import { AuthEditComponent } from './screens/auth/auth-edit/auth-edit.component';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,9 @@ import { AuthEditComponent } from './screens/auth/auth-edit/auth-edit.component'
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig, "cloud"),
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

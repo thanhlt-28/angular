@@ -17,19 +17,21 @@
       </th>
     </tr>
   </thead>
-  <tbody>
+  <tbody *ngFor="let p of prod; index as i">
     <tr>
-      <th scope="row"></th>
-      <td></td>
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ p.title | titlecase }}</td>
       <td>
-        <img alt="" width="100" />
+        <img [src]="p.image" alt="" width="100" />
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>{{ p.price | currency: "VND" }}</td>
+      <td>{{ p.desc }}</td>
+      <td>{{ p.name }}</td>
       <td>
         <a class="btn btn-info" href="">Sửa </a>
-        <a class="btn btn-danger" href="">Xóa </a>
+        <a href="javascript:;" (click)="remove(p.id)" class="btn btn-danger"
+          >Xóa
+        </a>
       </td>
     </tr>
   </tbody>

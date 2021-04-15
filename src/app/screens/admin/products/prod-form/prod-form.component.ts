@@ -82,7 +82,21 @@ export class ProdFormComponent implements OnInit {
       })
     })
   }
-
+  createForm() {
+    return new FormGroup({
+      id: new FormControl(),
+      title: new FormControl(),
+      image: new FormControl(),
+      desc: new FormControl(),
+      details: new FormControl(),
+      price: new FormControl(),
+      categoryId: new FormControl(),
+      authorId: new FormControl(),
+    });
+  }
+  get f() {
+    return this.prodForm.controls;
+  }
   onFileSelected(event) {
     var n = Date.now();
     const file = event.target.files[0];

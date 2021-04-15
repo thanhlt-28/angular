@@ -92,15 +92,13 @@
     },
     {
       "id": 6,
-      "categoryId": "danh-muc/5",
       "title": "Laptop 1232112",
       "image": "https://banner2.cleanpng.com/20180805/cil/kisspng-porsche-cayenne-car-porsche-914-porsche-911-servizio-di-noleggio-porsche-in-europa-5b67243f55ffe1.7218574615334861433523.jpg",
       "desc": "2344423",
       "details": "243433",
       "price": 23423434,
-      "authorId": "2",
-      "created_at": "",
-      "updated_at": ""
+      "categoryId": null,
+      "authorId": 2
     },
     {
       "id": 7,
@@ -116,12 +114,22 @@
     },
     {
       "id": 8,
-      "categoryId": "danh-muc/4",
-      "title": "423234324",
+      "title": "ưedffsdfsdfdsf",
       "image": "https://banner2.cleanpng.com/20180805/cil/kisspng-porsche-cayenne-car-porsche-914-porsche-911-servizio-di-noleggio-porsche-in-europa-5b67243f55ffe1.7218574615334861433523.jpg",
       "desc": "32434324",
       "details": "2343243",
       "price": 23423423423,
+      "categoryId": null,
+      "authorId": 2
+    },
+    {
+      "id": 9,
+      "categoryId": "danh-muc/3",
+      "title": "Dầu ăn ",
+      "image": "https://banner2.cleanpng.com/20180805/cil/kisspng-porsche-cayenne-car-porsche-914-porsche-911-servizio-di-noleggio-porsche-in-europa-5b67243f55ffe1.7218574615334861433523.jpg",
+      "desc": "2e3232341",
+      "details": "12334214314134132414",
+      "price": 132412,
       "authorId": "2",
       "created_at": "",
       "updated_at": ""

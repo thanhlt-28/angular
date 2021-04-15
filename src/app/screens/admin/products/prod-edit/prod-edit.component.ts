@@ -60,8 +60,8 @@ export class ProdEditComponent implements OnInit {
 
   constructor(
     private storage: AngularFireStorage,
-    private route: ActivatedRoute,
-    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private route: Router,
     private bookService: BookService,
     private cateService: CategoryService,
     private authService: AuthService
@@ -87,31 +87,34 @@ export class ProdEditComponent implements OnInit {
 
 
   async ngOnInit() {
-    this.getCates();
-    await this.route.params.subscribe((params) => {
+    this.getCate();
+    await this.activatedRoute.params.subscribe((params) => {
       this.bookId = params.id;
-    }),
-      this.authService.getAuthor().subscribe(
-        (data) => {
-          this.author = data;
-        })
-
-    await this.bookService.findById(this.sub).subscribe((book) => {
+    });
+    await this.bookService.findById(this.bookId).subscribe((book) => {
       this.editProd.setValue({
         id: book.id,
         title: book.title,
         image: book.image,
-        price: book.price,
         desc: book.desc,
         details: book.details,
+        price: book.price,
         categoryId: book.categoryId,
         authorId: book.authorId,
       });
       this.imageUrl = book.image;
     });
   }
-  getCates() {
-    throw new Error('Method not implemented.');
+  getCate() {
+    this.cateService.getAll().subscribe(
+      (data) => {
+        this.author = data;
+      }
+    ),
+      this.authService.getAll().subscribe(
+        (data) => {
+          this.author = data;
+        })
   }
   upload(event) {
     var n = Date.now();
@@ -138,7 +141,7 @@ export class ProdEditComponent implements OnInit {
     event.preventDefault();
     this.editProd.value.image = this.imageUrl;
     this.bookService.update(this.editProd.value).subscribe(data => {
-      this.router.navigate(['/admin/san-pham']);
+      this.route.navigate(['/admin/san-pham']);
     })
   }
 

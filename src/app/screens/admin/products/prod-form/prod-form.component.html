@@ -55,14 +55,13 @@
       <div class="position-relative row form-group">
         <label class="col-sm-2 col-form-label">Ảnh</label>
         <div class="col-sm-10">
-          <img
-            [src]="imageUrl"
-            width="100px"
-            alt=""
-            formControlName="imageUrl"
-            (change)="fileUploader($event)"
+          <img [src]="imageUrl" width="100px" alt="" />
+          <input
+            #fileUploader
+            type="file"
+            class="form-control"
+            (change)="onFileSelected($event)"
           />
-          <input #fileUploader type="file" class="form-control" />
         </div>
       </div>
       <br />

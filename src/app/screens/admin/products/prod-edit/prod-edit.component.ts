@@ -102,6 +102,8 @@ export class ProdEditComponent implements OnInit {
         authorId: book.authorId,
       });
       this.imageUrl = book.image;
+
+
     });
   }
   getCate() {
@@ -115,7 +117,7 @@ export class ProdEditComponent implements OnInit {
           this.author = data;
         })
   }
-  upload(event) {
+  fileUploader(event) {
     var n = Date.now();
     const file = event.target.files[0];
     const filePath = `Uploads/${n}`;
@@ -128,6 +130,8 @@ export class ProdEditComponent implements OnInit {
           this.downloadURL = fileRef.getDownloadURL();
           this.downloadURL.subscribe((url) => {
             this.imageUrl = url;
+            console.log(this.imageUrl);
+
           });
         })
       )

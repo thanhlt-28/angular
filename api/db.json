@@ -31,16 +31,6 @@
   ],
   "books": [
     {
-      "id": 4,
-      "title": "Monster Ultra Violet 550ml",
-      "price": 52400,
-      "desc": "Nước uống năng lượng",
-      "categoryId": 7,
-      "details": "Monster là loại thức uống cao cấp được sử dụng và ưa chuộng bởi chính các vận động viên, nghệ sĩ, các ban nhạc trẻ, sinh viên và những người yêu thích mạo hiểm, khám phá, Monster Energy hứa hẹn sẽ đem lại một trải nghiệm mới về sản phẩm nước tăng lực cho người tiêu dùng Việt Nam. Nước tăng lực Monster đã trở thành một biểu tượng toàn cầu và là nhãn hiệu nước tăng lực luôn nằm trong top những sản phẩm được ưa chuộng bậc nhất trên thế giới.",
-      "authorId": 4,
-      "image": "https://assets.sainsburys-groceries.co.uk/gol/7785382/1/640x640.jpg"
-    },
-    {
       "id": 5,
       "title": "Monster Ultra Gold",
       "price": 99000,
@@ -122,15 +112,23 @@
     },
     {
       "id": 9,
-      "categoryId": "danh-muc/3",
       "title": "Dầu ăn ",
       "image": "https://banner2.cleanpng.com/20180805/cil/kisspng-porsche-cayenne-car-porsche-914-porsche-911-servizio-di-noleggio-porsche-in-europa-5b67243f55ffe1.7218574615334861433523.jpg",
       "desc": "2e3232341",
       "details": "12334214314134132414",
       "price": 132412,
-      "authorId": "2",
-      "created_at": "",
-      "updated_at": ""
+      "categoryId": null,
+      "authorId": 2
+    },
+    {
+      "id": 10,
+      "title": "Laptop 123",
+      "image": "https://firebasestorage.googleapis.com/v0/b/angular-bdea1.appspot.com/o/Uploads%2F1618542108700?alt=media&token=e3ced736-573d-4730-8c5e-02ebccbde2e7",
+      "desc": "ffff",
+      "details": "fffffffffff",
+      "price": 789,
+      "categoryId": null,
+      "authorId": 2
     }
   ],
   "authors": [

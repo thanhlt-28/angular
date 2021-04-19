@@ -22,8 +22,9 @@ export class BookListComponent implements OnInit {
     this.search();
   }
   search() {
-    this.bookService.getAll(this.filterObject).subscribe(data => {
+    this.bookService.getAllProd().subscribe(data => {
       this.books = data;
+      console.log(data)
     })
   }
 

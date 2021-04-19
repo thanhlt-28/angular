@@ -61,10 +61,9 @@
         <div class="col-sm-10">
           <img [src]="imageUrl" width="100px" alt="" />
           <input
-            #fileUploader
             type="file"
-            class="form-control"
             (change)="fileUploader($event)"
+            class="form-control"
           />
         </div>
       </div>

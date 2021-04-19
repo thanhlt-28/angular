@@ -33,23 +33,10 @@ export class CateListComponent implements OnInit {
     this.cateService.findById(id).subscribe((cate) => {
       let cof = confirm("Bạn có chắc chắn xóa không?");
       if (cof) {
-
-        // let ids = cate.books.map((item) => item.id);
-        // if (id.length != 0) {
-        //   this.bookService.removeMultiple(id).subscribe((result) => {
-        //     this.cateService.remove(cate.id).subscribe((data) => {
-        //       // console.log(data);
-        //       this.getCateList();
-        //       this.router.navigate(['/admin/danh-muc'])
-        //     });
-        //   });
-        // } else {
         this.cateService.remove(id).subscribe((data) => {
-          // console.log(data);
           this.getCateList();
           this.router.navigate(['/admin/danh-muc'])
         });
-        // }
       }
     });
   }

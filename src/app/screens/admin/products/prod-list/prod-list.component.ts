@@ -3,6 +3,11 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { BookService } from 'src/app/services/book.service';
 import { Router } from '@angular/router';
 import { ORDER_DATA } from 'src/app/mock-data/ORDER_DATA';
+import { AuthService } from 'src/app/services/auth.service';
+import { Author } from 'src/app/models/author';
+import { CategoryService } from 'src/app/services/category.service';
+import { Category } from 'src/app/models/category';
+import { Product } from 'src/app/models/product';
 @Component({
   selector: 'app-prod-list',
   templateUrl: './prod-list.component.html',
@@ -10,7 +15,9 @@ import { ORDER_DATA } from 'src/app/mock-data/ORDER_DATA';
 })
 export class ProdListComponent implements OnInit {
 
-  prod: any;
+  prod: Array<Product> = [];
+  author: Array<Author> = [];
+  cates: Category[] = [];
   // totalPage = null;
   // pages: Array<Number> = [];
 
@@ -19,13 +26,13 @@ export class ProdListComponent implements OnInit {
   filterObject = {
     orderBy: "1",
     keyword: "",
-    pagesize: 10,
-    currentPage: 1
+
   }
   constructor(
     private router: Router,
     private bookService: BookService,
-
+    private authService: AuthService,
+    private categoryService: CategoryService
   ) { }
 
   ngOnInit(): void {
@@ -35,7 +42,10 @@ export class ProdListComponent implements OnInit {
   getAllProd() {
     this.bookService.getAllProd().subscribe(data => {
       this.prod = data;
-    })
+    }),
+      this.authService.getAll().subscribe(data => {
+        this.author = data;
+      })
   }
   remove(id: any) {
     // console.log(id);

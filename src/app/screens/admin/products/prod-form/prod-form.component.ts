@@ -109,8 +109,7 @@ export class ProdFormComponent implements OnInit {
         finalize(() => {
           this.downloadURL = fileRef.getDownloadURL();
           this.downloadURL.subscribe(url => {
-            console.log(url);
-
+            // console.log(url);
             this.imageUrl = url;
           });
         })

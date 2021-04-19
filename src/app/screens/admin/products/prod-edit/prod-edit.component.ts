@@ -109,7 +109,7 @@ export class ProdEditComponent implements OnInit {
   getCate() {
     this.cateService.getAll().subscribe(
       (data) => {
-        this.author = data;
+        this.cates = data;
       }
     ),
       this.authService.getAll().subscribe(
@@ -130,7 +130,7 @@ export class ProdEditComponent implements OnInit {
           this.downloadURL = fileRef.getDownloadURL();
           this.downloadURL.subscribe((url) => {
             this.imageUrl = url;
-            console.log(this.imageUrl);
+            // console.log(this.imageUrl);
 
           });
         })

@@ -14,7 +14,7 @@ export class BookService {
     constructor(private http: HttpClient) { }
 
     getAllProd(): Observable<Product[]> {
-        return this.http.get<Product[]>(`${this.bookApi}?_embed=books`);
+        return this.http.get<Product[]>(`${this.bookApi}?_expand=category&_expand=author`);
     }
     getAll(filter: any): Observable<any> {
         let requestUrl = this.bookApi + "?_expand=category&_expand=author";

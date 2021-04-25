@@ -99,6 +99,16 @@
       "price": 14000,
       "categoryId": 7,
       "authorId": 2
+    },
+    {
+      "id": 12,
+      "title": "Monster Ultra Gold",
+      "image": "https://firebasestorage.googleapis.com/v0/b/angular-bdea1.appspot.com/o/Uploads%2F1619360046530?alt=media&token=caf15536-f452-41c0-bfba-8d4b4d442b86",
+      "desc": "Năng lượng",
+      "details": "A software platform used for building applications based on containers — small and lightweight execution environments.",
+      "price": 23000,
+      "categoryId": 4,
+      "authorId": 6
     }
   ],
   "authors": [

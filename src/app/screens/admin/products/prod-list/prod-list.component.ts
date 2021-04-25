@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 import { ORDER_DATA } from 'src/app/mock-data/ORDER_DATA';
 import { AuthService } from 'src/app/services/auth.service';
 import { Author } from 'src/app/models/author';
-import { CategoryService } from 'src/app/services/category.service';
 import { Category } from 'src/app/models/category';
 import { Product } from 'src/app/models/product';
 @Component({
@@ -18,8 +17,7 @@ export class ProdListComponent implements OnInit {
   prod: Array<Product> = [];
   author: Array<Author> = [];
   cates: Category[] = [];
-  // totalPage = null;
-  // pages: Array<Number> = [];
+
 
   orderData: any[] = ORDER_DATA;
 
@@ -32,7 +30,6 @@ export class ProdListComponent implements OnInit {
     private router: Router,
     private bookService: BookService,
     private authService: AuthService,
-    private categoryService: CategoryService
   ) { }
 
   ngOnInit(): void {
@@ -48,12 +45,10 @@ export class ProdListComponent implements OnInit {
       })
   }
   remove(id: any) {
-    // console.log(id);
     this.bookService.findById(id).subscribe((cate) => {
       let cof = confirm("Bạn có chắc chắn xóa không?");
       if (cof) {
         this.bookService.remove(id).subscribe((data) => {
-          // console.log(data);
           this.getAllProd();
           this.router.navigate(['/admin/san-pham'])
         });

@@ -77,7 +77,7 @@ const routes: Routes = [
         component: AuthNewComponent
       },
       {
-        path: "quoc-gia/edit",
+        path: "quoc-gia/edit/:id",
         component: AuthEditComponent
       },
     ]

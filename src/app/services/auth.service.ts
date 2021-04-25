@@ -13,7 +13,7 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<Author[]> {
-    return this.http.get<Author[]>(`${this.API_URL}?_embed=authors`);
+    return this.http.get<Author[]>(`${this.API_URL}?_embed=books`);
   }
   getAuthor(): Observable<Author[]> {
     return this.http.get<Author[]>(`${this.API_URL}?_embed=authors`);

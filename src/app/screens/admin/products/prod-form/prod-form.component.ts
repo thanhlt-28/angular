@@ -19,7 +19,7 @@ export class ProdFormComponent implements OnInit {
 
   sub = "Add Form";
   downloadURL: Observable<string>;
-  imageUrl: String = "https://banner2.cleanpng.com/20180805/cil/kisspng-porsche-cayenne-car-porsche-914-porsche-911-servizio-di-noleggio-porsche-in-europa-5b67243f55ffe1.7218574615334861433523.jpg"
+  imageUrl: String = "https://goldenadgroup.vn/upload/logo-porsche.png"
   cates: Array<Category> = [];
   author: Array<Author> = [];
 
